@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: #141519;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.main {
+    width: 350px;
+    height: 380px;
+    background-color: #1F2630;
+    border-radius: 20px;
+    padding: 35px 30px;
+}
+
+.main .rating-star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #273039;
+    border-radius: 50%;
+}
+
+.main .content h1 {
+    color: white;
+    font-weight: 900;
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.main .content p {
+    color: #9198A2;
+    font-weight: 100;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.main .rating-rank {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    width: 100%;
+}
+
+.main .rating-rank>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background-color: #273039;
+    border-radius: 50%;
+    color: #9198A2;
+    margin-bottom: 20px;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+
+.main .rating-rank>div:hover {
+    background-color: #FC7613;
+    color: #fff;
+    cursor: pointer;
+}
+
+.main .rating-rank>div:active {
+    background-color: gray;
+    color: #fff;
+    cursor: pointer;
+}
+
+.submit-button button {
+    width: 100%;
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    background-color: #FC7613;
+    color: white;
+    margin-top: 10px;
+}
+
+.submit-button :hover {
+    background-color: #fff;
+    color: #FC7613;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1440px) {
+    .main {
+        width: 370px;
+        height: 380px;
+        padding: 40px 30px;
+    }
+
+    .main .rating-star {
+        width: 45px;
+        height: 45px;
+    }
+
+    .main .rating-rank>div {
+        width: 45px;
+        height: 45px;
+    }
+
+    .main .content p {
+        line-height: 1.5rem;
+    }
+
+    .main .submit-button {
+        padding: 10px 0;
+        border-radius: 50px;
+    }
+
+}
+
+.main1 {
+    background-color: #1F2630;
+    border-radius: 20px;
+    width: 350px;
+    height: 380px;
+    padding: 30px 13px;
+    text-align: center;
+}
+
+.main1 .rating-img1 {
+    margin: 0 45px;
+}
+
+.content1 h3 {
+    color: #FC7613;
+    font-weight: 300;
+    letter-spacing: .02rem;
+    font-size: .9rem;
+    margin: 20px 55px;
+    background-color: #27303C;
+    border-radius: 50px;
+    padding: 7px 10px;
+}
+
+.content1 h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.content1 p {
+    color: #9198A2;
+    font-weight: 100;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 0 5px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .main1 {
+        width: 370px;
+        height: 380px;
+        padding: 35px 30px;
+    }
+
+    .content1 h2 {
+        color: #fff;
+        margin-bottom: 20px;
+        font-weight: 900;
+        margin-top: 30px;
+    }
+}
+
+.hide {
+    display: none;
+}
